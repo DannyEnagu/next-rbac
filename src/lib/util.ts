@@ -7,5 +7,6 @@ export const isValidPermissionName = (permissionName: string): boolean => {
 };
 
 export const isAdministrator = (role: string): boolean => {
+  console.log(role, 'Testing')
   return role === 'ADMIN';
 }

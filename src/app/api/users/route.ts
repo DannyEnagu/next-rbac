@@ -10,7 +10,6 @@ export async function POST(request: Request) {
   if (!token) {
     return NextResponse.json({ message: 'Not authenticated' }, { status: 401 });
   }
-
   try {
     if (!isAdministrator(token.role)) {
       return NextResponse.json({ message: 'Access denied: Admins only' }, { status: 403 });

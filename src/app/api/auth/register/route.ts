@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     
     try {
         const user = await createUser(data);
-        const token = jwt.sign({userId: user.id, roleId: user.roleId, role: user.role }, JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({userId: user.id, roleId: user.roleId, role: user.role.name }, JWT_SECRET, { expiresIn: '24h' });
         const userPermissions = await getUserPermissionsByRole(user.roleId);
         await setCookies({
             name: 'token',

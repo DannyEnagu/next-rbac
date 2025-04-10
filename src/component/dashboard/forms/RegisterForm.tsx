@@ -85,7 +85,7 @@ return (<div>
             <Password id="password" name="password" placeholder="Enter your password" toggleMask={true} className='w-full !block' inputClassName='w-full' onChange={handleChange} />
         </div>
         <div>
-            <Button disabled={createCustomer.isPending} loading={createCustomer.isPending} label="Login" icon="pi pi-check" className="p-button-info !mt-8 w-full" type="submit" />
+            <Button disabled={createCustomer.isPending} loading={createCustomer.isPending} label="Login" className="p-button-info !mt-8 w-full" type="submit" />
         </div>
     </form>
 </div>)

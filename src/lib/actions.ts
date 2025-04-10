@@ -17,3 +17,9 @@ export async function setCookies({value, name}: CookieData): Promise<void> {
 
     cookiesStore.set(cookieData);
 }
+
+export async function clearCookies(key: string) {
+    const cookiesStore = await cookies();
+
+    cookiesStore.delete(key)
+}
