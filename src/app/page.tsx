@@ -11,9 +11,6 @@ export default function Home() {
         Welcome to the E-com/SaaS RBAC application. This is a sample application to demonstrate the use of RBAC (Role-Based Access Control) in a web application. The application is built using Next.js, TypeScript, and Tailwind CSS.
         <br />
         <br />
-        The application is designed to be a simple E-commerce/SaaS application that demonstrates the use of RBAC. The application has a simple user interface that allows users to view products, add products to their cart, and checkout.
-        <br />
-        <br />
         The application is built using Next.js, TypeScript, and Tailwind CSS. Next.js is a React framework that allows for server-side rendering and static site generation. TypeScript is a superset of JavaScript that adds static typing to the language. Tailwind CSS is a utility-first CSS framework that allows for rapid UI development.
         <br />
         <br />

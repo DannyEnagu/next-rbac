@@ -1,11 +1,9 @@
 import axios from 'axios';  
 import useAuthStore from '@/store/auth-store';
 
-// const BASE_URL = process.env.BASE_URL as string;
-
 // Axios Instance
 const api = axios.create({
-  baseURL: '/api',  
+  baseURL: '/api',
 });  
 
 api.interceptors.request.use(  
